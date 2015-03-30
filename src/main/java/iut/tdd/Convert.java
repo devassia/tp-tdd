@@ -23,7 +23,11 @@ public class Convert {
 			liste.put("14","quatorze");
 			liste.put("15", "quinze");
 			liste.put("16", "seize");
-							
+			liste.put("20", "vingt");
+			liste.put("30", "trente");
+			liste.put("40", "quarante");
+			liste.put("50", "cinquante");
+			liste.put("60", "soixante");
 	}
 	public static String num2text(String input) {
 		return (liste.get(input));
