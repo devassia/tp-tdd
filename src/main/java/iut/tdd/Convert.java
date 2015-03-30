@@ -30,7 +30,17 @@ public class Convert {
 			liste.put("60", "soixante");
 	}
 	public static String num2text(String input) {
-		return (liste.get(input));
+		if (liste.get(input) != null) {
+				return (liste.get(input));
+		}
+		else if(input.substring(1,2).equals("1")){
+			String res = liste.get(input.substring(0,1) + "0") +"et un";
+			return res;
+		}
+		else {
+			String res = liste.get(input.substring(0,1)+ "0") + " " + liste.get(input.substring(1,2));
+			return res;
+		}
 		 
 	}
 	public static String text2num(String input) {
